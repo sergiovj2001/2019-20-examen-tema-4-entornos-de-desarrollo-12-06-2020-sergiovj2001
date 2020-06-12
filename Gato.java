@@ -1,9 +1,6 @@
-package examenEntornos;
-
+package refactorizacion;
 /**
  * @author Jaime Rabasco Ronda
- * 
- * La clase Gato es una clase que hace que representa el maullido de in gato
  */
 /*Refactorizacion
 Haz las refactorizaciones que necesites para que "Miau"
@@ -15,11 +12,7 @@ public class Gato {
 				
 	}
 
-/**
- * 
- * maullar hace que se muestre en pantalla el maullido del gato
- */
-	void maullar(Object newParam) {
+	void maullar() {
 		System.out.println("Miau");
 	}
 
