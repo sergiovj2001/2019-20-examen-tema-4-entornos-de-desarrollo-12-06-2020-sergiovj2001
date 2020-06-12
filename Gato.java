@@ -12,7 +12,7 @@ public class Gato {
 				
 	}
 
-	void maullar() {
+	void maullar(Object newParam) {
 		System.out.println("Miau");
 	}
 
