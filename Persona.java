@@ -1,5 +1,13 @@
 package examenEntornos;
 
+/**
+ * 
+ * La clase persona es una superclase que proviene de estudiante, con ella podemos trabajar de forma mas general con mas empleados del centro
+ * o de cualquier otro lugar
+ * @author Sergio Vera Jurado
+ * @version 1.0.0
+ */
+
 public class Persona {
 
 	protected String nombre;
@@ -11,42 +19,42 @@ public class Persona {
 	}
 
 	/**
-	 * @return the nombre
+	 * @return Devuelve el nombre que le hemos insertado
 	 */
 	protected String getNombre() {
 		return nombre;
 	}
 
 	/**
-	 * @param nombre the nombre to set
+	 * @param insertamos el nombre
 	 */
 	protected void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
 	/**
-	 * @return the apellidos
+	 * @return Nos devuelve los apellidos insertados
 	 */
 	protected String getApellidos() {
 		return apellidos;
 	}
 
 	/**
-	 * @param apellidos the apellidos to set
+	 * @param Insertamos los apellidos
 	 */
 	protected void setApellidos(String apellidos) {
 		this.apellidos = apellidos;
 	}
 
 	/**
-	 * @return the nif
+	 * @return nos devuelve el Nif de la persona
 	 */
 	protected String getNif() {
 		return nif;
 	}
 
 	/**
-	 * @param nif the nif to set
+	 * @param Insertamos el Nif de la persona
 	 */
 	protected void setNif(String nif) {
 		this.nif = nif;
