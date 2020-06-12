@@ -1,6 +1,9 @@
-package refactorizacion;
+package examenEntornos;
+
 /**
  * @author Jaime Rabasco Ronda
+ * 
+ * La clase estudiantes nos permite conocer los datos sobre los estudiantes del centro
  */
 /*Refactorizacion
 Extrae una superclase con los campos
@@ -12,22 +15,28 @@ y los metodos
 	getApellidos(), setApellidos()
 	getNif(), setNif()*/
 	
-
 enum Curso {
 	PRIMARIA, ESO, BACHILLERATO, UNIVERSIDAD
 };
 
-public class Estudiante{
+public class Estudiante extends Persona{
 	Curso curso;
-	private String nombre;
-	private String apellidos;
-	private String nif;
-
 	/**
 	 * @param nombre
+	 * 
+	 * Aqui insertamos el nombre del alumno
+	 * 
 	 * @param apellidos
+	 * 
+	 * Aqui insertamos el apellido del alumno
+	 * 
 	 * @param nif
+	 * 
+	 * Aqui insertamos el Nif del alumno
+	 * 
 	 * @param curso
+	 * 
+	 * Aqui insertamos el Curso al que pertenece el alumno
 	 */
 	protected Estudiante(String nombre, String apellidos, String nif,
 			Curso curso) {
@@ -38,56 +47,14 @@ public class Estudiante{
 	}
 
 	/**
-	 * @return the nombre
-	 */
-	protected String getNombre() {
-		return nombre;
-	}
-
-	/**
-	 * @param nombre the nombre to set
-	 */
-	protected void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-
-	/**
-	 * @return the apellidos
-	 */
-	protected String getApellidos() {
-		return apellidos;
-	}
-
-	/**
-	 * @param apellidos the apellidos to set
-	 */
-	protected void setApellidos(String apellidos) {
-		this.apellidos = apellidos;
-	}
-
-	/**
-	 * @return the nif
-	 */
-	protected String getNif() {
-		return nif;
-	}
-
-	/**
-	 * @param nif the nif to set
-	 */
-	protected void setNif(String nif) {
-		this.nif = nif;
-	}
-		
-	/**
-	 * @return the curso
+	 * @return Nos devuelve el curso al que pertenece el alumno
 	 */
 	protected Curso getCurso() {
 		return curso;
 	}
 
 	/**
-	 * @param curso the curso to set
+	 * @param Insertamos el curso al que pertenece el alumno, los cursos solo pueden ser: PRIMARIA, ESO, BACHILLERATO, UNIVERSIDAD
 	 */
 	protected void setCurso(Curso curso) {
 		this.curso = curso;
